@@ -10,7 +10,7 @@ const imgElement = document.querySelector('.item');
 imgElement.setAttribute('alt', slackUserName);
 
 const imgSrc = document.querySelector('.item'); 
-imgElement.setAttribute('src', slackDisplayImage);
+imgSrc.setAttribute('src', slackDisplayImage);
 
 const githubLink = document.querySelector('.btn'); 
 githubLink.setAttribute('href', sourceCode);
