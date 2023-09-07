@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+   padding: 3rem;
+}
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+    width: 80%;
+    height: fit-content;
+    background-color: #D89562;
+    color: #393737;
+    margin-top: auto;
+    margin: auto;
+    border-radius: .5rem;
+    box-shadow: .5px .5px 15px 1px #9e9c9c;
+}
+.div {
+   width: 100%;
+   text-align: center;
+   flex: 1; 
+}
+.div  img{
+    object-position: center center ;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 1px 2px 20px 1px #ae875d;
+}
+.first-text{
+    z-index: 10;
+    color: #fff;
+    text-align: left;
+    margin: auto;
+    flex: 1;
+    padding-left: 2rem;
+}  
+.first-text > h1{
+    font-weight: 600;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.first-text > p{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.t-ticker-tape{
+    width: 100%;
+    overflow: hidden;
+  }
+  .ticker {
+    display: flex;
+  }
+  .t-ticker-tape {
+    width: 100%;
+  } 
+  .t-ticker-tape .ticker {
+    padding: 1rem;
+    white-space: nowrap;
+    width: 100%;
+  
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 12s;
+  } 
+  @keyframes ticker {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  } 
+  .ticker_items {
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 0.4rem;
+    color: #ae875d;
+    text-transform: uppercase;
+  }
+  .btn{
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    background-color:#F9C885;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: fit-content;
+    border-radius: .5rem;
+    box-shadow: 1px 2px 20px 1px #ae875d;
+  }
+
+  @media screen and (max-width: 1050px) {
+
+    .main{
+       padding: 5rem 3rem;   
+    } 
+    .first-text > h1{
+        font-size: 3rem;
+    }
+    .first-text > p{
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    } 
+      } 
+
+  @media screen and (max-width: 830px) {
+    .main{
+        padding: 5rem 1.3rem;   
+     } 
+     .first-text > h1{
+         font-size: 2rem;
+     }
+     .first-text > p{
+         font-size: 1rem;
+         line-height: 2rem;
+     } 
+    .first-section{
+        flex-direction: column-reverse;
+    }
+    .div {
+        width: 8rem;
+        margin-bottom: 1rem;
+    }
+    .first-text{
+        text-align: center;
+    }
+    .btn{
+        padding: .8rem;
+        font-size: .8rem;
+        box-shadow: 1px 2px 20px 1px #ae875d;
+        text-align: center;
+        margin:.8rem auto;
+      }
+      } 
