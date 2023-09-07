@@ -1,5 +1,5 @@
 const slackUserName = 'Cynthia'
-const slackDisplayImage = 'https://www.canva.com/design/DAFtxeIymB8/yr1i6wzcgxGyHNI_FHGlYA/view?utm_content=DAFtxeIymB8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
+const slackDisplayImage = '/hero-pic.png'
 const myTrack = 'Frontend Track'
 
 // document.getElementById('datetime').innerHTML = $scope.currentDate;
@@ -9,7 +9,7 @@ const imgElement = document.querySelector('.item');
 imgElement.setAttribute('alt', slackUserName);
 
 const imgSrc = document.querySelector('.item'); 
-imgElement.setAttribute('src', slackDisplayImage);
+imgSrc.setAttribute('src', slackDisplayImage);
 
 const githubLink = document.querySelector('.btn'); 
 githubLink.setAttribute('href', slackUserName);
