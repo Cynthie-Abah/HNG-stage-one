@@ -1,5 +1,5 @@
 const slackUserName = 'Cynthia'
-const slackDisplayImage = '/hero-pic.png'
+const slackDisplayImage = './hero-pic.png'
 const myTrack = 'Frontend Track'
 
 // document.getElementById('datetime').innerHTML = $scope.currentDate;
