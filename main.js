@@ -1,5 +1,5 @@
 const slackUserName = 'Cynthia'
-const slackDisplayImage = '../hero-pic.png'
+const slackDisplayImage = 'https://www.canva.com/design/DAFtxeIymB8/yr1i6wzcgxGyHNI_FHGlYA/view?utm_content=DAFtxeIymB8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
 const myTrack = 'Frontend Track'
 
 // document.getElementById('datetime').innerHTML = $scope.currentDate;
