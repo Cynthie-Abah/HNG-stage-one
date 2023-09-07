@@ -1,6 +1,7 @@
 const slackUserName = 'Cynthia'
 const slackDisplayImage = '/hero-pic.png'
 const myTrack = 'Frontend Track'
+const sourceCode = 'https://github.com/Cynthie-Abah/HNG-stage-one'
 
 // document.getElementById('datetime').innerHTML = $scope.currentDate;
 document.querySelector('.first-heading').innerHTML = slackUserName;
@@ -12,7 +13,7 @@ const imgSrc = document.querySelector('.item');
 imgElement.setAttribute('src', slackDisplayImage);
 
 const githubLink = document.querySelector('.btn'); 
-githubLink.setAttribute('href', slackUserName);
+githubLink.setAttribute('href', sourceCode);
 
 const currentTime = document.querySelector('#datetime')
 
