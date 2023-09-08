@@ -19,6 +19,7 @@ const currentTime = document.querySelector('#datetime')
 
 const timeTicker = () => {
     const currentDate = new Date().toUTCString();
+    
     currentTime.innerHTML = currentDate;
     return currentDate;
   }
