@@ -1,5 +1,5 @@
 const slackUserName = 'Cynthia'
-const slackDisplayImage = '/hero-pic.png'
+const slackDisplayImage = 'https://github.com/Cynthie-Abah/HNG-stage-one/blob/main/hero-pic.png?raw=true'
 const myTrack = 'Frontend Track'
 const sourceCode = 'https://github.com/Cynthie-Abah/HNG-stage-one'
 
