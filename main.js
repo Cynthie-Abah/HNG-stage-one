@@ -10,7 +10,7 @@ const imgElement = document.querySelector('.item');
 imgElement.setAttribute('alt', slackUserName);
 
 const imgSrc = document.querySelector('.item'); 
-imgSrc.setAttribute('src', slackDisplayImage);
+imgElement.setAttribute('src', slackDisplayImage);
 
 const githubLink = document.querySelector('.btn'); 
 githubLink.setAttribute('href', sourceCode);
@@ -18,16 +18,7 @@ githubLink.setAttribute('href', sourceCode);
 const currentTime = document.querySelector('#datetime')
 
 const timeTicker = () => {
-    const currentDate = new Date().toLocaleString('en-US', {
-        weekday: 'long',
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric',
-        second: 'numeric',
-        timeZoneName: 'long'
-      });
+    const currentDate = new Date().toUTCString();
     currentTime.innerHTML = currentDate;
     return currentDate;
   }
