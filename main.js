@@ -15,12 +15,21 @@ imgElement.setAttribute('src', slackDisplayImage);
 const githubLink = document.querySelector('.btn'); 
 githubLink.setAttribute('href', sourceCode);
 
-const currentTime = document.querySelector('#datetime')
+const currentTimer = document.querySelector('#datetime')
 
 const timeTicker = () => {
-    const currentDate = new Date().toUTCString();
+    const currentDate = new Date();
+
+    const dayOfWeek = currentDate.toLocaleDateString('en-US', { weekday: 'long' });
+    const time = currentDate.toLocaleTimeString('en-US', {
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        timeZone: 'UTC',
+        timeZoneName: 'short'
+    });
     
-    currentTime.innerHTML = currentDate;
+    currentTimer.innerHTML = `${dayOfWeek} ${time}`;
     return currentDate;
   }
   
